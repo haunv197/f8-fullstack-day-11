@@ -65,7 +65,10 @@ table {
 .table .border-top-none {
   border-top: none;
 }
-
+.tr-center td {
+  vertical-align: middle;
+  text-align: center;
+}
 /* Admin Table */
 
 .admin-table {
