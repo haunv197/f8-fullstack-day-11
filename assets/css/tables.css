@@ -65,3 +65,66 @@ table {
 .table .border-top-none {
   border-top: none;
 }
+
+/* Admin Table */
+
+.admin-table {
+  font-family: "Roboto", sans-serif;
+  margin: 4rem 0;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.admin-table th,
+.admin-table td {
+  border: 2px solid #ebebed;
+  padding: 0 1rem;
+  height: 4.5rem;
+  vertical-align: middle;
+}
+
+.admin-table th {
+  background-color: #ebebed;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.admin-table tr:nth-child(even),
+.admin-table tr:hover {
+  background-color: #f9f9f9;
+}
+.admin-table th:not(:last-child) {
+  border-right-color: #fff;
+}
+
+.admin-table td img {
+  width: 3rem;
+  margin-right: 0.4rem;
+}
+
+.table-data-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.3rem;
+}
+
+.start-date-data .table-data-inner,
+.posts-data .table-data-inner {
+  justify-content: end;
+}
+.status-data .table-data-inner {
+  justify-content: center;
+}
+
+.status-data span {
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  background: rgb(68 166 109 / 20%);
+  border-radius: 0.4rem;
+  color: #44a66d;
+}
+
+.status-data .status-data__not {
+  color: #f2c94c;
+  background: rgb(253 248 227);
+}
